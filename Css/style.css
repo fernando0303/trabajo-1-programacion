@@ -1,10 +1,39 @@
 html {
     font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.pagina {
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header"
+    "info info info";
+}
+
+.spacer{
+    margin: 4rem 0;
+}
+
+.titulo-secundario{
+    margin-bottom: 1rem;
+}
+
+/* HEADER */
+header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
-page-container {
-    
+header h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;    
 }
 
 /* NAV */
@@ -26,3 +55,43 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+/* CONTENIDO PRINCIPAL*/
+.toda-la-info {
+    grid-area: info;
+}
+
+.toda-la-info h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.contenido-principal {
+columns: 4;
+gap: 2rem;
+column-rule: solid hotpink 1px;
+}
+
+.contenido-principal p:first-of-type::first-letter {
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 3rem;
+    float: left;
+    padding: 0.3rem 0.6rem;
+    background-color: blueviolet;
+    color: white;
+    margin-right: .5rem;
+}
+
+img {
+    width: 180%;
+}
+
+/* PARTE DEL ABOUT */
+.small-info {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+
+}
+    
