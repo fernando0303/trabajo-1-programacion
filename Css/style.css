@@ -94,4 +94,93 @@ img {
     grid-template-rows: auto;
 
 }
-    
+
+
+/* Celular */
+@media screen and (max-width: 767px) {}
+
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 990px) {}
+.pagina {
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header"
+    "info info info";
+}
+.toda-la-info {
+    grid-area: info;
+}
+
+.toda-la-info h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.contenido-principal {
+columns: 4;
+gap: 2rem;
+column-rule: solid hotpink 1px;
+}
+
+.contenido-principal p:first-of-type::first-letter {
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 3rem;
+    float: left;
+    padding: 0.3rem 0.6rem;
+    background-color: blueviolet;
+    color: white;
+    margin-right: .5rem;
+}
+
+img {
+    width: 180%;
+}
+
+/* Escritorio */
+@media (min-width: 991px) {}
+.pagina {
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header"
+    "info info info";
+}
+.toda-la-info {
+    grid-area: info;
+}
+
+.toda-la-info h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.contenido-principal {
+columns: 4;
+gap: 2rem;
+column-rule: solid hotpink 1px;
+}
+
+.contenido-principal p:first-of-type::first-letter {
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 3rem;
+    float: left;
+    padding: 0.3rem 0.6rem;
+    background-color: blueviolet;
+    color: white;
+    margin-right: .5rem;
+}
+
+img {
+    width: 180%;
+}
